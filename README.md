@@ -251,7 +251,6 @@ Este projeto não utiliza banco de dados.
 
 Todos os dados são armazenados temporariamente em memória utilizando ArrayList durante a execução da aplicação.
 
-Portanto:
 
 
 ---
