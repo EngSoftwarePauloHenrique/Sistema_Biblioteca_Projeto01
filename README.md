@@ -1,147 +1,173 @@
-# 📚 Sistema de Biblioteca
+📚 Sistema de Biblioteca
 
-Projeto desenvolvido em **Java** utilizando os conceitos de **Programação Orientada a Objetos (POO)** para gerenciamento de uma biblioteca.
+Sistema de gerenciamento de biblioteca desenvolvido em Java utilizando Programação Orientada a Objetos (POO). O sistema permite o cadastro de livros e colaboradores, controle de empréstimos, devoluções e aplicação de multas.
 
-## 🎯 Objetivo
+🎯 Objetivo
 
-O objetivo deste sistema é automatizar o controle de uma biblioteca, permitindo o gerenciamento de livros, colaboradores, empréstimos, devoluções e multas de forma simples e organizada.
+Automatizar o gerenciamento de uma biblioteca através de uma aplicação de console, permitindo o controle de livros, colaboradores e empréstimos de forma simples e organizada.
 
----
+🛠 Tecnologias Utilizadas
+Java JDK 17+
+Apache NetBeans IDE
+Programação Orientada a Objetos (POO)
+ArrayList (Collections Framework)
+📋 Requisitos de Ambiente
 
-## 🚀 Funcionalidades
+Antes de executar o projeto, certifique-se de possuir:
 
-### 📖 Gerenciamento de Livros
+Software Necessário
+Java JDK 17 ou superior
+Apache NetBeans IDE
+Verificar Instalação do Java
 
-* Cadastro de livros
-* Consulta de livros cadastrados
-* Controle de disponibilidade dos livros
+No terminal execute:
 
-### 👥 Gerenciamento de Colaboradores
+java -version
 
-* Cadastro de colaboradores
-* Consulta de colaboradores cadastrados
+Resultado esperado:
 
-### 📚 Empréstimos
+java version "17"
 
-* Seleção do colaborador
-* Seleção do livro
-* Registro de empréstimos
-* Controle de disponibilidade dos livros
+ou superior.
 
-### 🔄 Devoluções
-
-* Devolução de livros emprestados
-* Atualização automática da disponibilidade do livro
-* Remoção do empréstimo ativo
-
-### 💰 Multas
-
-* Seleção de empréstimos ativos
-* Cálculo de multa por atraso
-* Simulação de envio de aviso ao colaborador
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-* Java
-* Apache NetBeans IDE
-* Programação Orientada a Objetos (POO)
-* Collections Framework (ArrayList)
-
----
-
-## 📂 Estrutura do Projeto
-
-```text
-src/
-└── sistemabiblioteca/
-    ├── Main.java
-    ├── Biblioteca.java
-    ├── Livro.java
-    ├── Colaborador.java
-    ├── Emprestimo.java
-    └── Multa.java
-```
-
----
-
-## 📋 Funcionalidades Disponíveis
-
-```text
-===== SISTEMA DE BIBLIOTECA =====
-
-1 - Cadastrar Livro
-2 - Cadastrar Colaborador
-3 - Listar Livros
-4 - Listar Colaboradores
-5 - Registrar Empréstimo
-6 - Gerar Multa
-7 - Listar Empréstimos
-8 - Devolver Livro
-0 - Sair
-```
-
----
-
-## ▶️ Como Executar
-
-### Pré-requisitos
-
-* Java JDK 17 ou superior
-* Apache NetBeans IDE
-
-### Passos para execução
-
-1. Clone este repositório:
-
-```bash
+📥 Instalação do Projeto
+1. Clonar o Repositório
 git clone https://github.com/EngSoftwarePauloHenrique/Sistema_Biblioteca_Projeto01.git
-```
-
-2. Abra o projeto no Apache NetBeans.
-
-3. Execute a classe:
-
-```text
-Main.java
-```
-
-ou pressione:
-
-```text
+2. Abrir o Projeto
+Abra o Apache NetBeans.
+Clique em:
+File → Open Project
+Selecione a pasta:
+Sistema_Biblioteca_Projeto01
+Clique em Open Project.
+▶️ Execução do Sistema
+Abra a classe:
+src/sistemabiblioteca/Main.java
+Execute pressionando:
 F6
-```
 
----
+ou
 
-## 📚 Conceitos Aplicados
+Run Project
+🚀 Funcionalidades
+1. Cadastro de Livros
 
-* Programação Orientada a Objetos (POO)
-* Encapsulamento
-* Classes e Objetos
-* Associação entre Classes
-* Modularização
-* Reutilização de Código
-* Estruturas de Dados com ArrayList
+Permite cadastrar novos livros informando:
 
----
+ID
+Título
+Autor
+2. Cadastro de Colaboradores
 
-## 🎓 Projeto Acadêmico
+Permite cadastrar colaboradores informando:
 
-Projeto desenvolvido para a disciplina de **Gestão de Projetos**, com foco na aplicação prática dos conceitos de Programação Orientada a Objetos e desenvolvimento de sistemas em Java.
+ID
+Nome
+3. Listagem de Livros
 
----
+Exibe todos os livros cadastrados e sua situação:
 
-## 👨‍💻 Autor
+Disponível
+Emprestado
+4. Listagem de Colaboradores
 
-### Paulo Henrique Melo de Moraes
+Exibe todos os colaboradores cadastrados.
 
-Desenvolvedor e estudante da área de Tecnologia da Informação.
+5. Registro de Empréstimos
 
-Projeto desenvolvido para fins acadêmicos e de aprendizado em Java.
+Fluxo:
 
----
+Selecionar colaborador.
+Selecionar livro.
+Registrar empréstimo.
+
+Resultado:
+
+Empréstimo realizado com sucesso!
+6. Geração de Multas
+
+Fluxo:
+
+Selecionar empréstimo.
+Informar quantidade de dias em atraso.
+Sistema calcula a multa.
+
+Fórmula:
+
+Valor da multa = Dias de atraso × R$ 2,00
+7. Listagem de Empréstimos
+
+Exibe todos os empréstimos ativos.
+
+Exemplo:
+
+João -> Java POO
+Maria -> Estrutura de Dados
+8. Devolução de Livros
+
+Fluxo:
+
+Selecionar empréstimo.
+Registrar devolução.
+
+Resultado:
+
+Livro devolvido!
+Empréstimo encerrado com sucesso!
+
+O livro volta a ficar disponível para novos empréstimos.
+
+🗂 Organização do Projeto
+Sistema_Biblioteca_Projeto01/
+│
+├── src/
+│   └── sistemabiblioteca/
+│       ├── Main.java
+│       ├── Biblioteca.java
+│       ├── Livro.java
+│       ├── Colaborador.java
+│       ├── Emprestimo.java
+│       └── Multa.java
+│
+└── README.md
+📖 Descrição das Classes
+Main.java
+
+Responsável pela execução do sistema e exibição do menu principal.
+
+Biblioteca.java
+
+Gerencia:
+
+Livros
+Colaboradores
+Empréstimos
+Livro.java
+
+Representa os livros cadastrados e controla sua disponibilidade.
+
+Colaborador.java
+
+Representa os usuários aptos a realizar empréstimos.
+
+Emprestimo.java
+
+Relaciona um colaborador a um livro emprestado.
+
+Multa.java
+
+Calcula e exibe multas por atraso.
+
+🗄 Banco de Dados
+
+Este projeto não utiliza banco de dados.
+
+Todos os dados são armazenados temporariamente em memória utilizando ArrayList durante a execução da aplicação.
 
 
+👨‍💻 Autor
+
+Paulo Henrique Melo de Moraes
+
+Projeto acadêmico desenvolvido para aplicação prática dos conceitos de Programação Orientada a Objetos em Java.
 
