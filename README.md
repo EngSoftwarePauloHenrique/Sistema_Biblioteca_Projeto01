@@ -143,5 +143,5 @@ Projeto desenvolvido para fins acadêmicos e de aprendizado em Java.
 
 ---
 
-⭐ Se este projeto foi útil para você, considere deixar uma estrela no repositório.
+
 
